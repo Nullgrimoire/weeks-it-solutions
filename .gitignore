@@ -1,7 +1,12 @@
-# ── OS ──────────────────────────────────────────────────────────
+# ── OS ───────────────────────────────────────────────────────────
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
 Thumbs.db
-desktop.ini
+ehthumbs.db
+Desktop.ini
 
 # ── Editor / IDE ─────────────────────────────────────────────────
 .vscode/
@@ -9,7 +14,26 @@ desktop.ini
 *.suo
 *.user
 *.swp
+*.swo
 *~
+*.sublime-project
+*.sublime-workspace
+
+# ── Node (if a build step is added later) ────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+dist/
+build/
+.cache/
+
+# ── Env / secrets ────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
 
 # ── Logs & temp ──────────────────────────────────────────────────
 *.log

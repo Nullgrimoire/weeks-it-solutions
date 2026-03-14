@@ -36,6 +36,9 @@ weeks-it-solutions/
 └── assets/
     ├── css/
     │   └── styles.css
+    ├── img/
+    │   ├── favicon.svg        ← SVG brand favicon (auto-loaded by all pages)
+    │   └── og-image.png       ← 1200×630 Open Graph image (add before launch)
     └── js/
         └── main.js
 ```
@@ -55,6 +58,9 @@ The site is a fully static set of HTML files and can be deployed to any static h
 
 - **GitHub Pages** — push to `main`, enable Pages in repo settings (root of `main` branch)
 - **Netlify / Vercel** — drag-and-drop the folder or connect the repo
+
+> **Before going live:** Add a 1200×630 `assets/img/og-image.png` for social share previews,
+> and update the social media `href="#"` placeholders in the footer of each page.
 
 ## License
 
