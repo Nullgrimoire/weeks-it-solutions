@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Portfolio | Weeks IT Solutions</title>
+  <meta name="description" content="Browse our portfolio of custom websites built for local businesses, fitness studios, law firms, and more. Real results, real clients." />
+  <meta name="author" content="Weeks IT Solutions" />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['Inter','sans-serif'], display: ['Space Grotesk','sans-serif'] } } }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="antialiased">
+
+  <!-- ================================================================
+       NAVBAR
+  ================================================================ -->
+  <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-50 px-6 py-4 lg:px-10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+      <a href="index.html" class="flex items-center gap-2.5" aria-label="Weeks IT Solutions home">
+        <div class="w-8 h-8 rounded-lg btn-primary flex items-center justify-center font-display font-bold text-sm text-white select-none">W</div>
+        <span class="font-display font-bold text-lg text-white">Weeks<span class="g-text">IT</span></span>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a href="index.html"     data-page="index"     class="nav-link text-gray-400 hover:text-white text-sm transition-colors">Home</a></li>
+        <li><a href="services.html"  data-page="services"  class="nav-link text-gray-400 hover:text-white text-sm transition-colors">Services</a></li>
+        <li><a href="portfolio.html" data-page="portfolio" class="nav-link text-gray-400 hover:text-white text-sm transition-colors">Portfolio</a></li>
+        <li><a href="about.html"     data-page="about"     class="nav-link text-gray-400 hover:text-white text-sm transition-colors">About</a></li>
+        <li><a href="contact.html" class="btn-primary text-sm font-semibold px-5 py-2.5 rounded-full">Get Started</a></li>
+      </ul>
+
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span id="hb-1" class="block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+        <span id="hb-2" class="block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+        <span id="hb-3" class="block w-4 h-0.5 bg-white rounded transition-all duration-300 self-end"></span>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden overflow-hidden" role="navigation">
+      <div class="glass rounded-2xl p-6 mt-4">
+        <ul class="flex flex-col gap-4">
+          <li><a href="index.html"     class="mob-link text-gray-300 text-sm font-medium block">Home</a></li>
+          <li><a href="services.html"  class="mob-link text-gray-300 text-sm font-medium block">Services</a></li>
+          <li><a href="portfolio.html" class="mob-link text-gray-300 text-sm font-medium block">Portfolio</a></li>
+          <li><a href="about.html"     class="mob-link text-gray-300 text-sm font-medium block">About</a></li>
+          <li><a href="contact.html" class="btn-primary text-sm font-semibold px-5 py-2.5 rounded-full text-center block mt-2">Get Started</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ================================================================
+       PAGE HERO
+  ================================================================ -->
+  <section class="page-hero-bg grid-dots relative pt-32 pb-16 px-6 lg:px-10 overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full blur-3xl opacity-20 pointer-events-none"
+         style="background:radial-gradient(circle,#3b82f6,transparent 70%)"></div>
+    <div class="relative z-10 max-w-7xl mx-auto text-center reveal">
+      <span class="tag inline-block px-4 py-1.5 rounded-full text-xs text-purple-300 font-medium mb-4">Our Work</span>
+      <h1 class="font-display font-bold text-4xl md:text-6xl text-white mb-4">Projects We're <span class="g-text">Proud Of</span></h1>
+      <p class="text-gray-400 text-lg max-w-xl mx-auto">Real websites built for real businesses that needed results, not just a pretty page.</p>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       PORTFOLIO GRID
+  ================================================================ -->
+  <section id="portfolio" class="py-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card 1 -->
+        <div class="p-card glass rounded-2xl overflow-hidden group reveal" style="transition-delay:.1s">
+          <div class="relative h-48 overflow-hidden" style="background:linear-gradient(135deg,#1a0533,#0d1f40)">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-14 h-14 rounded-xl mx-auto mb-3 flex items-center justify-center" style="background:linear-gradient(135deg,#ec4899,#a855f7)">
+                  <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </div>
+                <span class="text-white font-display font-bold text-lg">Apex Fitness</span>
+              </div>
+            </div>
+            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span class="text-white font-semibold text-sm glass px-4 py-2 rounded-full">View Case Study</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-display font-bold text-lg text-white">Apex Fitness Studio</h3>
+              <span class="tag text-xs text-purple-300 font-medium px-2 py-0.5 rounded-full">Fitness</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Complete brand-new website with class schedule, membership info, and booking integration. Launched in 6 days.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Web Dev</span>
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Booking</span>
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">SEO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-card glass rounded-2xl overflow-hidden group reveal" style="transition-delay:.2s">
+          <div class="relative h-48 overflow-hidden" style="background:linear-gradient(135deg,#0d2141,#0a2a1a)">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-14 h-14 rounded-xl mx-auto mb-3 flex items-center justify-center" style="background:linear-gradient(135deg,#3b82f6,#06b6d4)">
+                  <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <span class="text-white font-display font-bold text-lg">Blue Ridge Plumbing</span>
+              </div>
+            </div>
+            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span class="text-white font-semibold text-sm glass px-4 py-2 rounded-full">View Case Study</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-display font-bold text-lg text-white">Blue Ridge Plumbing</h3>
+              <span class="tag text-xs text-blue-300 font-medium px-2 py-0.5 rounded-full">Trades</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Local service business site with emergency call button, service areas map, and Google review integration. Inquiries doubled in 60 days.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Web Dev</span>
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Local SEO</span>
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Reviews</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-card glass rounded-2xl overflow-hidden group reveal" style="transition-delay:.3s">
+          <div class="relative h-48 overflow-hidden" style="background:linear-gradient(135deg,#1a1a0d,#1a0d2a)">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-14 h-14 rounded-xl mx-auto mb-3 flex items-center justify-center" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">
+                  <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+                </div>
+                <span class="text-white font-display font-bold text-lg">Meridian Law</span>
+              </div>
+            </div>
+            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span class="text-white font-semibold text-sm glass px-4 py-2 rounded-full">View Case Study</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-display font-bold text-lg text-white">Meridian Law Group</h3>
+              <span class="tag text-xs text-yellow-400/70 font-medium px-2 py-0.5 rounded-full">Legal</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Professional law firm site with practice area pages, attorney bios, and a consultation booking funnel. Page 1 rankings achieved.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Redesign</span>
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Local SEO</span>
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Schema</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="p-card glass rounded-2xl overflow-hidden group reveal" style="transition-delay:.4s">
+          <div class="relative h-48 overflow-hidden" style="background:linear-gradient(135deg,#1a200d,#2a1a0d)">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-14 h-14 rounded-xl mx-auto mb-3 flex items-center justify-center" style="background:linear-gradient(135deg,#6b7280,#374151)">
+                  <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                </div>
+                <span class="text-white font-display font-bold text-lg">Summit Roofing</span>
+              </div>
+            </div>
+            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span class="text-white font-semibold text-sm glass px-4 py-2 rounded-full">View Case Study</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-display font-bold text-lg text-white">Summit Roofing Co.</h3>
+              <span class="tag text-xs text-gray-400/80 font-medium px-2 py-0.5 rounded-full">Trades</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Roofing company redesign with before/after gallery, free estimate form, and 5-star review showcase. 3x more online leads.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Redesign</span>
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Gallery</span>
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Forms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="p-card glass rounded-2xl overflow-hidden group reveal" style="transition-delay:.5s">
+          <div class="relative h-48 overflow-hidden" style="background:linear-gradient(135deg,#0a1a2e,#1a0a2e)">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-14 h-14 rounded-xl mx-auto mb-3 flex items-center justify-center" style="background:linear-gradient(135deg,#a855f7,#3b82f6)">
+                  <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                </div>
+                <span class="text-white font-display font-bold text-lg">Nova Digital</span>
+              </div>
+            </div>
+            <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span class="text-white font-semibold text-sm glass px-4 py-2 rounded-full">View Case Study</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="font-display font-bold text-lg text-white">Nova Digital Agency</h3>
+              <span class="tag text-xs text-purple-300/80 font-medium px-2 py-0.5 rounded-full">Agency</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Dark-mode agency portfolio with animated hero, case study drawer, and lead-capture funnel. Built in 8 days from brief to launch.</p>
+            <div class="flex gap-2 flex-wrap">
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Web Dev</span>
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">Animation</span>
+              <span class="tag text-xs text-gray-400 px-2.5 py-1 rounded-lg">CRO</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Card 6 -->
+        <div class="p-card glass-accent rounded-2xl overflow-hidden flex flex-col items-center justify-center p-8 text-center min-h-[320px] reveal" style="transition-delay:.6s;border:1px solid rgba(168,85,247,0.2)">
+          <div class="w-14 h-14 rounded-2xl mb-5 flex items-center justify-center" style="background:linear-gradient(135deg,rgba(168,85,247,.2),rgba(59,130,246,.2));border:1px solid rgba(168,85,247,0.3)">
+            <svg class="w-7 h-7 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </div>
+          <div class="tag text-xs text-purple-300 font-medium px-3 py-1 rounded-full mb-3">Next Up</div>
+          <h3 class="font-display font-bold text-xl text-white mb-2">Your Business Here</h3>
+          <p class="text-gray-400 text-sm mb-6 leading-relaxed">Ready to join our portfolio of successful sites? Let's build something great together.</p>
+          <a href="contact.html" class="btn-primary font-semibold px-6 py-3 rounded-full text-sm">Start Your Project &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="s-divider"></div>
+
+
+  <!-- CTA BANNER -->
+  <section class="py-24 px-6 lg:px-10">
+    <div class="max-w-4xl mx-auto reveal">
+      <div class="glass-accent rounded-3xl p-10 md:p-14 text-center relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(59,130,246,0.08),transparent)"></div>
+        <div class="relative z-10">
+          <span class="tag inline-block px-4 py-1.5 rounded-full text-xs text-blue-300 font-medium mb-5">Your Turn</span>
+          <h2 class="font-display font-bold text-3xl md:text-5xl text-white mb-5">
+            Ready to Join the <span class="g-text">Winner's Circle?</span>
+          </h2>
+          <p class="text-gray-400 text-lg max-w-xl mx-auto mb-8">
+            Every site in our portfolio started with a single conversation.
+            Yours is next — no commitment required to chat.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="contact.html" class="btn-primary cta-pulse font-semibold px-8 py-4 rounded-full text-base">Get a Free Quote &rarr;</a>
+            <a href="services.html" class="btn-outline font-semibold px-8 py-4 rounded-full text-base">View Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       FOOTER
+  ================================================================ -->
+  <footer class="pt-16 pb-8 px-6 lg:px-10 border-t" style="border-color:rgba(255,255,255,.06)">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div class="sm:col-span-2">
+          <a href="index.html" class="flex items-center gap-2.5 mb-4">
+            <div class="w-8 h-8 rounded-lg btn-primary flex items-center justify-center font-display font-bold text-sm text-white select-none">W</div>
+            <span class="font-display font-bold text-lg text-white">Weeks<span class="g-text">IT</span></span>
+          </a>
+          <p class="text-gray-500 text-sm leading-relaxed max-w-xs mb-6">High-performance websites for businesses serious about growth.</p>
+          <div class="flex gap-3">
+            <a href="#" class="soc-icon w-9 h-9 glass rounded-lg flex items-center justify-center text-gray-500" aria-label="Twitter / X"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="soc-icon w-9 h-9 glass rounded-lg flex items-center justify-center text-gray-500" aria-label="LinkedIn"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="#" class="soc-icon w-9 h-9 glass rounded-lg flex items-center justify-center text-gray-500" aria-label="GitHub"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c.96.005 1.927.129 2.997.403 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            <a href="#" class="soc-icon w-9 h-9 glass rounded-lg flex items-center justify-center text-gray-500" aria-label="Instagram"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white text-sm mb-5">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html"     class="f-link text-gray-500 text-sm">Home</a></li>
+            <li><a href="services.html"  class="f-link text-gray-500 text-sm">Services</a></li>
+            <li><a href="portfolio.html" class="f-link text-gray-500 text-sm">Portfolio</a></li>
+            <li><a href="about.html"     class="f-link text-gray-500 text-sm">About</a></li>
+            <li><a href="contact.html"   class="f-link text-gray-500 text-sm">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white text-sm mb-5">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="services.html"  class="f-link text-gray-500 text-sm">Website Development</a></li>
+            <li><a href="services.html"  class="f-link text-gray-500 text-sm">Website Redesign</a></li>
+            <li><a href="services.html"  class="f-link text-gray-500 text-sm">Local Business SEO</a></li>
+            <li><a href="contact.html"   class="f-link text-gray-500 text-sm">Free Consultation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4" style="border-top:1px solid rgba(255,255,255,.05)">
+        <p class="text-gray-600 text-xs">&copy; 2026 Weeks IT Solutions. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="f-link text-gray-600 text-xs">Privacy Policy</a>
+          <a href="#" class="f-link text-gray-600 text-xs">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+/* ================================================================
+   Weeks IT Solutions — Global Stylesheet
+   Loaded by every page. Tailwind CDN handles utility classes;
+   this file provides custom components and design tokens.
+================================================================ */
+
+/* ─── CSS VARIABLES ─── */
+:root {
+  --purple: #a855f7;
+  --blue:   #3b82f6;
+  --dark:   #0a0a0f;
+  --card:   #0f0f18;
+  --border: rgba(255, 255, 255, 0.07);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: var(--dark);
+  color: #cbd5e1;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ─── CUSTOM SCROLLBAR ─── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--dark); }
+::-webkit-scrollbar-thumb { background: var(--purple); border-radius: 4px; }
+
+/* ─── CANVAS PARTICLES ─── */
+#particles-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── GLASSMORPHISM ─── */
+.glass {
+  background: rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+}
+
+.glass-accent {
+  background: rgba(168, 85, 247, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(168, 85, 247, 0.18);
+}
+
+/* ─── GRADIENT TEXT ─── */
+.g-text {
+  background: linear-gradient(130deg, #a855f7, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── HERO BACKGROUND (home page) ─── */
+.hero-bg {
+  background:
+    radial-gradient(ellipse 70% 60% at 20% 55%, rgba(168, 85, 247, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 30%, rgba(59, 130, 246, 0.09) 0%, transparent 55%),
+    var(--dark);
+}
+
+/* ─── INNER-PAGE HERO BACKGROUND ─── */
+.page-hero-bg {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(168, 85, 247, 0.10) 0%, transparent 60%),
+    var(--dark);
+}
+
+/* ─── GRID DOT PATTERN ─── */
+.grid-dots {
+  background-image: radial-gradient(circle, rgba(168, 85, 247, 0.12) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ─── PRIMARY BUTTON ─── */
+.btn-primary {
+  background: linear-gradient(130deg, #a855f7, #3b82f6);
+  color: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+.btn-primary:focus-visible {
+  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.55);
+}
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(130deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0) 100%);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 28px rgba(168, 85, 247, 0.5); }
+.btn-primary:hover::after { transform: translateX(100%); }
+
+/* ─── OUTLINE BUTTON ─── */
+.btn-outline {
+  border: 1px solid rgba(168, 85, 247, 0.5);
+  color: #a855f7;
+  transition: all 0.25s ease;
+}
+.btn-outline:hover {
+  background: rgba(168, 85, 247, 0.1);
+  border-color: #a855f7;
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.25);
+}
+
+/* ─── TAG / BADGE ─── */
+.tag {
+  background: linear-gradient(130deg, rgba(168,85,247,0.12), rgba(59,130,246,0.12));
+  border: 1px solid rgba(168,85,247,0.22);
+}
+
+/* ─── NAVBAR ─── */
+.navbar { transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; }
+.navbar.scrolled {
+  background: rgba(10, 10, 15, 0.96) !important;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2px 30px rgba(0,0,0,0.6);
+  border-bottom: 1px solid rgba(168,85,247,0.12);
+}
+
+/* ─── NAV ACTIVE LINK ─── */
+.nav-link.active {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ─── MOBILE MENU ─── */
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+#mobile-menu.open {
+  max-height: 400px;
+  opacity: 1;
+}
+.mob-link { transition: color 0.2s ease, padding-left 0.2s ease; }
+.mob-link:hover { color: #a855f7; padding-left: 6px; }
+
+/* ─── SERVICE CARDS ─── */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(168,85,247,0.4) !important;
+  box-shadow: 0 24px 60px rgba(168,85,247,0.15);
+}
+.service-icon { transition: transform 0.3s ease; }
+.service-card:hover .service-icon { transform: scale(1.1) rotate(4deg); }
+
+/* ─── PORTFOLIO CARDS ─── */
+.p-card { transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden; }
+.p-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(168,85,247,0.2); }
+.p-card .p-overlay { opacity: 0; transition: opacity 0.3s ease; }
+.p-card:hover .p-overlay { opacity: 1; }
+
+/* ─── PROCESS STEP ─── */
+.step-card { transition: transform 0.3s ease; }
+.step-card:hover { transform: scale(1.04); }
+
+/* ─── BENEFIT ITEM ─── */
+.benefit-row { transition: transform 0.25s ease; }
+.benefit-row:hover { transform: translateX(6px); }
+
+/* ─── TESTIMONIAL CARD ─── */
+.t-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.t-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(168,85,247,0.12); }
+
+/* ─── ABOUT / TEAM CARD ─── */
+.team-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.team-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(168,85,247,0.15); }
+
+/* ─── VALUE CARD ─── */
+.value-card { transition: transform 0.3s ease, border-color 0.3s ease; }
+.value-card:hover { transform: translateY(-6px); border-color: rgba(168,85,247,0.4) !important; }
+
+/* ─── FORM INPUTS ─── */
+.form-field {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #e2e8f0;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.form-field:focus {
+  outline: none;
+  border-color: rgba(168,85,247,0.6);
+  box-shadow: 0 0 0 3px rgba(168,85,247,0.1);
+  background: rgba(168,85,247,0.04);
+}
+.form-field::placeholder { color: rgba(255,255,255,0.28); }
+.form-field.error { border-color: rgba(248,113,113,0.6) !important; }
+
+/* ─── FORM ERROR TEXT ─── */
+.f-error { display: none; color: #f87171; font-size: 0.72rem; margin-top: 4px; }
+.f-error.show { display: block; }
+
+/* ─── SCROLL REVEAL ─── */
+.reveal, .reveal-l, .reveal-r {
+  opacity: 0;
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal   { transform: translateY(28px); }
+.reveal-l { transform: translateX(-28px); }
+.reveal-r { transform: translateX(28px); }
+.reveal.in, .reveal-l.in, .reveal-r.in { opacity: 1; transform: none; }
+
+/* ─── SECTION DIVIDER ─── */
+.s-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(168,85,247,0.25), transparent);
+}
+
+/* ─── NEON GLOW ─── */
+.neon { box-shadow: 0 0 18px rgba(168,85,247,0.35), 0 0 40px rgba(168,85,247,0.15); }
+
+/* ─── STAT GRADIENT ─── */
+.stat-val {
+  background: linear-gradient(130deg, #a855f7, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── FOOTER LINKS ─── */
+.f-link { transition: color 0.2s ease; }
+.f-link:hover { color: #a855f7; }
+
+/* ─── SOCIAL ICONS ─── */
+.soc-icon { transition: transform 0.25s ease, color 0.25s ease; }
+.soc-icon:hover { transform: translateY(-3px); color: #a855f7; }
+
+/* ─── HERO CTA PULSE ─── */
+@keyframes cta-pulse {
+  0%, 100% { box-shadow: 0 0 18px rgba(168,85,247,0.35); }
+  50%       { box-shadow: 0 0 38px rgba(168,85,247,0.65), 0 0 70px rgba(168,85,247,0.25); }
+}
+.cta-pulse { animation: cta-pulse 2.8s ease-in-out infinite; }
+
+/* ─── BADGE FLOAT ─── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+.floating { animation: float 3.2s ease-in-out infinite; }
+
+/* ─── SUCCESS MESSAGE ─── */
+#form-success { display: none; }
+#form-success.show { display: flex; }

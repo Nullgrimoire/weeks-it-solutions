@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact | Weeks IT Solutions</title>
+  <meta name="description" content="Get in touch with Weeks IT Solutions. Request a free website quote, book a consultation, or ask a question — we respond within 24 hours." />
+  <meta name="author" content="Weeks IT Solutions" />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['Inter','sans-serif'], display: ['Space Grotesk','sans-serif'] } } }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="antialiased">
+
+  <!-- ================================================================
+       NAVBAR
+  ================================================================ -->
+  <nav id="navbar" class="navbar fixed top-0 left-0 right-0 z-50 px-6 py-4 lg:px-10">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+      <a href="index.html" class="flex items-center gap-2.5" aria-label="Weeks IT Solutions home">
+        <div class="w-8 h-8 rounded-lg btn-primary flex items-center justify-center font-display font-bold text-sm text-white select-none">W</div>
+        <span class="font-display font-bold text-lg text-white">Weeks<span class="g-text">IT</span></span>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-8">
+        <li><a href="index.html"     data-page="index"     class="nav-link text-gray-400 hover:text-white text-sm transition-colors">Home</a></li>
+        <li><a href="services.html"  data-page="services"  class="nav-link text-gray-400 hover:text-white text-sm transition-colors">Services</a></li>
+        <li><a href="portfolio.html" data-page="portfolio" class="nav-link text-gray-400 hover:text-white text-sm transition-colors">Portfolio</a></li>
+        <li><a href="about.html"     data-page="about"     class="nav-link text-gray-400 hover:text-white text-sm transition-colors">About</a></li>
+        <li><a href="contact.html" class="btn-primary text-sm font-semibold px-5 py-2.5 rounded-full">Get Started</a></li>
+      </ul>
+
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span id="hb-1" class="block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+        <span id="hb-2" class="block w-6 h-0.5 bg-white rounded transition-all duration-300"></span>
+        <span id="hb-3" class="block w-4 h-0.5 bg-white rounded transition-all duration-300 self-end"></span>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden overflow-hidden" role="navigation">
+      <div class="glass rounded-2xl p-6 mt-4">
+        <ul class="flex flex-col gap-4">
+          <li><a href="index.html"     class="mob-link text-gray-300 text-sm font-medium block">Home</a></li>
+          <li><a href="services.html"  class="mob-link text-gray-300 text-sm font-medium block">Services</a></li>
+          <li><a href="portfolio.html" class="mob-link text-gray-300 text-sm font-medium block">Portfolio</a></li>
+          <li><a href="about.html"     class="mob-link text-gray-300 text-sm font-medium block">About</a></li>
+          <li><a href="contact.html" class="btn-primary text-sm font-semibold px-5 py-2.5 rounded-full text-center block mt-2">Get Started</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ================================================================
+       PAGE HERO
+  ================================================================ -->
+  <section class="page-hero-bg grid-dots relative pt-32 pb-16 px-6 lg:px-10 overflow-hidden">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full blur-3xl opacity-20 pointer-events-none"
+         style="background:radial-gradient(circle,#a855f7,transparent 70%)"></div>
+    <div class="relative z-10 max-w-7xl mx-auto text-center reveal">
+      <span class="tag inline-block px-4 py-1.5 rounded-full text-xs text-purple-300 font-medium mb-4">Free Consultation</span>
+      <h1 class="font-display font-bold text-4xl md:text-6xl text-white mb-4">Let's <span class="g-text">Get Started</span></h1>
+      <p class="text-gray-400 text-lg max-w-xl mx-auto">Tell us about your project and we'll get back to you within 24 hours with a plan and a price.</p>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       CONTACT SECTION
+  ================================================================ -->
+  <section id="contact" class="py-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-14 items-start">
+
+        <!-- Left info column -->
+        <div class="lg:col-span-2 reveal-l">
+          <h2 class="font-display font-bold text-3xl text-white mb-6">
+            Everything Starts with a <span class="g-text">Conversation</span>
+          </h2>
+          <p class="text-gray-400 text-base leading-relaxed mb-10">
+            No sales pressure, no long-winded process. Fill out the form and we'll reach out
+            to learn more about your business and what you need.
+          </p>
+
+          <div class="space-y-7">
+
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl glass-accent flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-white text-sm mb-0.5">Email Us</div>
+                <a href="mailto:hello@weeksit.com" class="text-gray-400 text-sm hover:text-purple-400 transition-colors">hello@weeksit.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl glass-accent flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-white text-sm mb-0.5">Response Time</div>
+                <p class="text-gray-400 text-sm">We reply within 24 hours, usually same day.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl glass-accent flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-white text-sm mb-0.5">Free Consultation</div>
+                <p class="text-gray-400 text-sm">Initial discovery call is always completely free, no obligation.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-11 h-11 rounded-xl glass-accent flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <div class="font-semibold text-white text-sm mb-0.5">No Hidden Fees</div>
+                <p class="text-gray-400 text-sm">We quote clearly upfront. What you see is exactly what you pay.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right form panel -->
+        <div class="lg:col-span-3 reveal-r">
+          <div class="glass-accent rounded-3xl p-8 md:p-10 relative overflow-hidden">
+            <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 70% 50% at 100% 0%,rgba(168,85,247,0.05),transparent)"></div>
+
+            <form id="contact-form" class="relative space-y-6" novalidate>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Full Name <span class="text-purple-400">*</span></label>
+                  <input type="text" id="name" name="name"
+                    class="w-full glass form-field rounded-xl px-4 py-3.5 text-white text-sm placeholder-gray-600 outline-none focus:ring-2 transition-all"
+                    placeholder="Jane Smith"
+                    autocomplete="name" />
+                  <p id="name-error" class="f-error text-xs text-red-400 mt-1.5" role="alert">Please enter your full name.</p>
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address <span class="text-purple-400">*</span></label>
+                  <input type="email" id="email" name="email"
+                    class="w-full glass form-field rounded-xl px-4 py-3.5 text-white text-sm placeholder-gray-600 outline-none focus:ring-2 transition-all"
+                    placeholder="jane@example.com"
+                    autocomplete="email" />
+                  <p id="email-error" class="f-error text-xs text-red-400 mt-1.5" role="alert">Please enter a valid email address.</p>
+                </div>
+              </div>
+
+              <div>
+                <label for="website" class="block text-sm font-medium text-gray-300 mb-2">Current Website <span class="text-gray-600 text-xs font-normal">(optional)</span></label>
+                <input type="url" id="website" name="website"
+                  class="w-full glass form-field rounded-xl px-4 py-3.5 text-white text-sm placeholder-gray-600 outline-none focus:ring-2 transition-all"
+                  placeholder="https://yourbusiness.com"
+                  autocomplete="url" />
+                <p id="website-error" class="f-error text-xs text-red-400 mt-1.5" role="alert">Please enter a valid URL (e.g. https://example.com).</p>
+              </div>
+
+              <div>
+                <label for="service" class="block text-sm font-medium text-gray-300 mb-2">What Are You Looking For?</label>
+                <select id="service" name="service"
+                  class="w-full glass rounded-xl px-4 py-3.5 text-white text-sm outline-none focus:ring-2 transition-all appearance-none"
+                  style="background-image:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E\");background-repeat:no-repeat;background-position:right 1rem center;background-size:1.1rem">
+                  <option value="" class="bg-gray-900">Select a service...</option>
+                  <option value="new-website" class="bg-gray-900">New Website Development</option>
+                  <option value="redesign" class="bg-gray-900">Website Redesign</option>
+                  <option value="seo" class="bg-gray-900">Local Business SEO</option>
+                  <option value="unsure" class="bg-gray-900">Not Sure — Need Advice</option>
+                </select>
+
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Tell Us About Your Project <span class="text-purple-400">*</span></label>
+                <textarea id="message" name="message" rows="5"
+                  class="w-full glass form-field rounded-xl px-4 py-3.5 text-white text-sm placeholder-gray-600 outline-none focus:ring-2 transition-all resize-none"
+                  placeholder="Describe your business, what you're looking for, and any key details (timeline, budget, competitors, etc.)..."></textarea>
+                <p id="message-error" class="f-error text-xs text-red-400 mt-1.5" role="alert">Please tell us a bit about your project (min. 10 characters).</p>
+              </div>
+
+              <button type="submit" class="btn-primary w-full font-semibold py-4 rounded-full text-base transition-transform active:scale-95">
+                Send Message &rarr;
+              </button>
+
+              <p class="text-gray-600 text-xs text-center">
+                By submitting this form you agree to our <a href="#" class="text-purple-400 hover:underline">privacy policy</a>.
+                We never share your information.
+              </p>
+
+            </form>
+
+            <!-- Success state -->
+              <div id="form-success" class="absolute inset-0 rounded-3xl flex flex-col items-center justify-center text-center p-10" style="background:#0a0a0f">
+              <div class="w-16 h-16 rounded-full flex items-center justify-center mb-6" style="background:linear-gradient(135deg,rgba(168,85,247,.2),rgba(59,130,246,.2));border:1px solid rgba(168,85,247,0.3)">
+                <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-white mb-3">Message Received!</h3>
+              <p class="text-gray-400 text-base max-w-xs">Thanks for reaching out. We'll be in touch within 24 hours — usually much sooner.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================================================================
+       FOOTER
+  ================================================================ -->
+  <footer class="pt-16 pb-8 px-6 lg:px-10 border-t" style="border-color:rgba(255,255,255,.06)">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div class="sm:col-span-2">
+          <a href="index.html" class="flex items-center gap-2.5 mb-4">
+            <div class="w-8 h-8 rounded-lg btn-primary flex items-center justify-center font-display font-bold text-sm text-white select-none">W</div>
+            <span class="font-display font-bold text-lg text-white">Weeks<span class="g-text">IT</span></span>
+          </a>
+          <p class="text-gray-500 text-sm leading-relaxed max-w-xs mb-6">High-performance websites for businesses serious about growth.</p>
+          <div class="flex gap-3">
+            <a href="#" class="soc-icon w-9 h-9 glass rounded-lg flex items-center justify-center text-gray-500" aria-label="Twitter / X"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="soc-icon w-9 h-9 glass rounded-lg flex items-center justify-center text-gray-500" aria-label="LinkedIn"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a href="#" class="soc-icon w-9 h-9 glass rounded-lg flex items-center justify-center text-gray-500" aria-label="GitHub"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c.96.005 1.927.129 2.997.403 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            <a href="#" class="soc-icon w-9 h-9 glass rounded-lg flex items-center justify-center text-gray-500" aria-label="Instagram"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white text-sm mb-5">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html"     class="f-link text-gray-500 text-sm">Home</a></li>
+            <li><a href="services.html"  class="f-link text-gray-500 text-sm">Services</a></li>
+            <li><a href="portfolio.html" class="f-link text-gray-500 text-sm">Portfolio</a></li>
+            <li><a href="about.html"     class="f-link text-gray-500 text-sm">About</a></li>
+            <li><a href="contact.html"   class="f-link text-gray-500 text-sm">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold text-white text-sm mb-5">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="services.html"  class="f-link text-gray-500 text-sm">Website Development</a></li>
+            <li><a href="services.html"  class="f-link text-gray-500 text-sm">Website Redesign</a></li>
+            <li><a href="services.html"  class="f-link text-gray-500 text-sm">Local Business SEO</a></li>
+            <li><a href="contact.html"   class="f-link text-gray-500 text-sm">Free Consultation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4" style="border-top:1px solid rgba(255,255,255,.05)">
+        <p class="text-gray-600 text-xs">&copy; 2026 Weeks IT Solutions. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="f-link text-gray-600 text-xs">Privacy Policy</a>
+          <a href="#" class="f-link text-gray-600 text-xs">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
